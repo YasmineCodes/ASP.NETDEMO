@@ -1,0 +1,23 @@
+@model Category
+
+<form action="" method="post">
+    <div class="card border-primary p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="">Delete Category</h2>
+            <hr>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" disabled />
+        </div>
+        <div class="mb-3">
+            <label asp-for="DisplayOrder"></label>
+            <input asp-for="DisplayOrder" class="form-control" disabled />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+            <a asp-controller="Category" asp-action="index" class="btn btn-secondary mx-2" style="width:150px">Back to
+                List</a>
+        </div>
+    </div>
+</form>

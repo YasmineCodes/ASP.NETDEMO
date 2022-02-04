@@ -3,7 +3,7 @@
 <form action="" method="post">
     <div class="card border-primary p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="">Create Category</h2>
+            <h2 class="">Edit Category</h2>
             <hr>
         </div>
         <div asp-validation-summary="All"></div>
@@ -18,8 +18,8 @@
             <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
         <div>
-            <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
-            <a asp-controller="Category" asp-action="index" class="btn btn-secondary" style="width:150px">Back to
+            <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+            <a asp-controller="Category" asp-action="index" class="btn btn-secondary mx-2" style="width:150px">Back to
                 List</a>
         </div>
     </div>
